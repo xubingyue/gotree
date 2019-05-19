@@ -191,7 +191,7 @@ $ go run $GOPATH/src/learning/business/unit/qps_press/main.go
          learning/business/service/product.go
     */
     func init() {
-        //注册 service 于控制器 self.Service(&) 关联
+        // RegisterService 注册 service 与控制器 self.Service(&) 关联
         business.RegisterService(new(Product).Gotree())
     }
 
